@@ -7,6 +7,8 @@ copy the vundle settings in to .vimrc file.
 
 Install the YCM.
 
+** python-dev is a pre-requisite
+
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 
