@@ -41,3 +41,9 @@ if has("cscope")
 endif
 
 
+
+
+###YCM
+
+YCM installation is not working with quick installtion steps. Try full installation.
+(https://github.com/Valloric/YouCompleteMe)
