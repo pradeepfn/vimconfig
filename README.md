@@ -8,6 +8,8 @@ copy the vundle settings in to .vimrc file.
 
 Install the YCM.
 
+** on centos - install gcc-g++
+** cmake is a pre-requisite
 ** python-dev is a pre-requisite
 ```
 cd ~/.vim/bundle/YouCompleteMe
