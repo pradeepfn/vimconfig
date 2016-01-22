@@ -1,3 +1,16 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set backspace=indent,eol,start
+" ===========Vundle START
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+" "call vundle#begin('~/some/path/here')
+"
+" " let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+
 Plugin 'SirVer/ultisnips'
 
 " Snippets are separated from the engine. Add this if you want them:
@@ -14,14 +27,31 @@ Plugin 'scrooloose/syntastic'
 call vundle#end()  
 
 
+if has("cscope")
+        set csprg=/usr/bin/cscope
+        set csto=0
+        set cst
+        set nocsverb
+        " add any database in current directory
+        if filereadable("cscope.out")
+            cs add cscope.out
+        " else add database pointed to by environment
+        elseif $CSCOPE_DB != ""
+            cs add $CSCOPE_DB
+        endif
+        set csverb
+endif
+
+
 " ===========Nerdtree
 let NERDTreeDirArrows=0
 nmap <silent> <c-n> :NERDTreeToggle<CR>
-autocmd VimEnter * NERDTreeToggle
 let NERDTreeShowLineNumbers=1
 
+" ===========YCM START
+let g:ycm_global_ycm_extra_conf = "~/.vim/ycm_extra_conf.py"
+let g:ycm_collect_identifiers_from_tags_files = 1
 
-map <C-u> :call cscope#findInteractive(expand('<cword>'))<CR>
 
 set number
 " size of a hard tabstop
