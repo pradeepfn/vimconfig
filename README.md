@@ -1,6 +1,7 @@
 # vimconfig
 
 copy the vundle settings in to .vimrc file.
+(https://github.com/VundleVim/Vundle.vim)
 
 
 ### activating YCM
