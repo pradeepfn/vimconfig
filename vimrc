@@ -66,3 +66,7 @@ set softtabstop=4
 set statusline+=%f
 
 :set spell spelllang=en_us
+
+syntax on
+"the Filetype event get trigged, only if we set this.
+filetype plugin indent on
