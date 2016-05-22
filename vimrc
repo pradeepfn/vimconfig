@@ -91,6 +91,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 "===========Air-line 
+" http://vi.stackexchange.com/questions/5622/how-to-configure-vim-airline-plugin-to-look-like-its-own-project-screenshot
 let g:airline_powerline_fonts = 1
 let g:airline_theme='dracula'
 set laststatus=2
