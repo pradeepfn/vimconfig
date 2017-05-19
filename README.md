@@ -1,7 +1,11 @@
-# vimconfig
+# Installing
 
-copy the vundle settings in to .vimrc file.
-(https://github.com/VundleVim/Vundle.vim)
+copy the .vimrc file in to your home directory
+
+clone the vundle,
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+open up copied .vimrc file in vim and execute command :PluginInstall
 
 
 ### activating YCM
