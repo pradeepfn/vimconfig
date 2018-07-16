@@ -3,13 +3,14 @@ filetype off                  " required
 set backspace=indent,eol,start
 " ===========Vundle START
 set rtp+=~/.vim/bundle/Vundle.vim
+set encoding=utf-8
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 " "call vundle#begin('~/some/path/here')
 "
 " " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'SirVer/ultisnips'
 
